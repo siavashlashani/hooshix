@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>هوشیکس | راهکارهای هوش مصنوعی برای کسب‌وکار شما</title>
+  <meta name="description" content="هوشیکس: مشاوره، ساخت چت‌بات و ایجنت، اتوماسیون کسب‌وکار و طراحی سایت هوشمند با هوش مصنوعی.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%237c3aed'/%3E%3Ccircle cx='24' cy='28' r='5' fill='white'/%3E%3Ccircle cx='40' cy='28' r='5' fill='white'/%3E%3Cpath d='M20 42q12 8 24 0' stroke='white' stroke-width='4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================== ۱. هدر ===================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#" class="brand-logo" aria-label="هوشیکس - صفحه اصلی">
+        <span class="logo-mark"><i class="fa-solid fa-robot"></i></span>
+        <span class="logo-text">هوشیکس</span>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="منوی اصلی">
+        <a href="#services-section">خدمات</a>
+        <a href="#results-section">نمونه کارها</a>
+        <a href="#process-section">نحوه کارکرد</a>
+        <a href="#faq-section">سوالات متداول</a>
+        <a href="#footer">تماس با ما</a>
+        <button class="btn btn-outline nav-cta open-consult" data-source="header-mobile">مشاوره بگیر</button>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn btn-primary btn-sm" id="auth-button">
+          <i class="fa-regular fa-user"></i>
+          ثبت‌نام / ورود
+        </button>
+        <button class="menu-toggle" id="menu-toggle" aria-label="باز کردن منو" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== ۲. هیرو ===================== -->
+    <section class="hero" id="hero-section">
+      <div class="hero-bg-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-intro reveal">
+          <span class="badge-pill"><i class="fa-solid fa-sparkles"></i> هوش مصنوعی، ساده و کاربردی برای کسب‌وکار شما</span>
+          <h1>با <span class="text-gradient">هوشیکس</span>، هوش مصنوعی را وارد کسب‌وکارت کن</h1>
+          <p>چت‌بات، ایجنت هوشمند، اتوماسیون و وبسایت مجهز به AI — از مشاوره تا اجرا، همراه شما هستیم.</p>
+        </div>
+
+        <div class="hero-banners">
+          <!-- بنر ۱ — کسب‌وکار دارم -->
+          <article class="hero-banner reveal" id="banner-have-business">
+            <div class="banner-image">
+              <img src="images/hero-business.png" alt="صاحب کسب‌وکار در حال استفاده از ابزارهای هوش مصنوعی">
+            </div>
+            <div class="banner-body">
+              <span class="banner-tag"><i class="fa-solid fa-briefcase"></i> کسب‌وکار دارم</span>
+              <h2>کسب‌وکارت رو با هوش مصنوعی سریع‌تر و هوشمندتر کن</h2>
+              <p>با چت‌بات، ایجنت و اتوماسیون، کارهای تکراری رو خودکار کن و روی رشد تمرکز کن</p>
+              <button class="btn btn-primary open-consult" data-preset="have_business" data-source="hero-banner-1">
+                مشاوره بگیر <i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- بنر ۲ — می‌خوام کسب‌وکار راه بندازم -->
+          <article class="hero-banner banner-alt reveal" id="banner-start-business">
+            <div class="banner-image">
+              <img src="images/hero-startup.png" alt="کارآفرین با ایده‌ای که به کسب‌وکار تبدیل می‌شود">
+            </div>
+            <div class="banner-body">
+              <span class="banner-tag"><i class="fa-solid fa-rocket"></i> می‌خوام کسب‌وکار راه بندازم</span>
+              <h2>ایده‌ت رو با هوش مصنوعی به یک کسب‌وکار واقعی تبدیل کن</h2>
+              <p>از ساخت وبسایت تا برند و محتوا، مسیر شروع رو برات هموار می‌کنیم</p>
+              <button class="btn btn-primary open-consult" data-preset="start_business" data-source="hero-banner-2">
+                مشاوره بگیر <i class="fa-solid fa-arrow-left"></i>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ۳. نوار لوگوی ابزارهای AI ===================== -->
+    <section class="tools-marquee" id="tools-section" aria-label="ابزارهای هوش مصنوعی که با آن‌ها کار می‌کنیم">
+      <div class="container">
+        <p class="marquee-label">با قدرتمندترین ابزارهای هوش مصنوعی دنیا کار می‌کنیم</p>
+      </div>
+      <div class="marquee" id="tools-marquee">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/openai.svg" alt="" onerror="this.remove()"> ChatGPT</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/googlegemini.svg" alt="" onerror="this.remove()"> Gemini</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/anthropic.svg" alt="" onerror="this.remove()"> Claude</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/n8n.svg" alt="" onerror="this.remove()"> n8n</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/zapier.svg" alt="" onerror="this.remove()"> Zapier</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/perplexity.svg" alt="" onerror="this.remove()"> Perplexity</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/githubcopilot.svg" alt="" onerror="this.remove()"> Copilot</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/huggingface.svg" alt="" onerror="this.remove()"> Hugging Face</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/meta.svg" alt="" onerror="this.remove()"> Llama</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/make.svg" alt="" onerror="this.remove()"> Make</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/elevenlabs.svg" alt="" onerror="this.remove()"> ElevenLabs</span>
+            <span class="tool-pill"><img src="https://cdn.jsdelivr.net/npm/simple-icons@13/icons/notion.svg" alt="" onerror="this.remove()"> Notion AI</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ۴. نمایش نتیجه ===================== -->
+    <section class="results" id="results-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">نمایش نتیجه</span>
+          <h2>هوش مصنوعی در عمل، نه فقط در حرف</h2>
+          <p>نمونه‌های واقعی از عملکرد هر خدمت را ببینید</p>
+        </header>
+
+        <!-- فریم ۱: چت‌بات -->
+        <article class="result-frame reveal" id="frame-chatbot">
+          <h3 class="frame-title"><span class="frame-icon"><i class="fa-solid fa-comments"></i></span> چت‌بات هوشمند</h3>
+          <div class="device-frame">
+            <div class="device-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="device-url">پشتیبانی آنلاین فروشگاه «نوین‌پوش»</span>
+            </div>
+            <div class="chat-window" id="chat-window" dir="rtl">
+              <div class="chat-header">
+                <span class="chat-avatar"><i class="fa-solid fa-robot"></i></span>
+                <div>
+                  <strong>دستیار نوین‌پوش</strong>
+                  <small><span class="online-dot"></span> آنلاین — پاسخ فوری</small>
+                </div>
+              </div>
+              <div class="chat-messages" id="chat-messages"></div>
+              <div class="chat-input">
+                <span>پیام خود را بنویسید…</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- فریم ۲: ایجنت -->
+        <article class="result-frame reveal" id="frame-agent">
+          <h3 class="frame-title"><span class="frame-icon"><i class="fa-solid fa-user-gear"></i></span> ایجنت خودکار</h3>
+          <div class="device-frame">
+            <div class="device-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="device-url">ایجنت مدیریت سفارش — داشبورد هوشیکس</span>
+            </div>
+            <div class="agent-window">
+              <div class="agent-task">
+                <div class="agent-task-head">
+                  <span class="task-badge" id="agent-status">در حال اجرا</span>
+                  <strong>تسک: پردازش سفارش جدید #۴۸۲۱</strong>
+                </div>
+                <ul class="agent-steps" id="agent-steps">
+                  <li data-log="سفارش جدید از سایت دریافت شد — ۳ قلم کالا"><i></i><span>دریافت سفارش از وبسایت</span></li>
+                  <li data-log="موجودی انبار بررسی شد — همه اقلام موجود است"><i></i><span>بررسی موجودی انبار</span></li>
+                  <li data-log="فاکتور شماره ۱۰۳۲ صادر و ذخیره شد"><i></i><span>صدور فاکتور</span></li>
+                  <li data-log="پیامک تأیید برای مشتری ارسال شد"><i></i><span>اطلاع‌رسانی به مشتری</span></li>
+                  <li data-log="گزارش روزانه در Google Sheets به‌روزرسانی شد"><i></i><span>ثبت در گزارش فروش</span></li>
+                </ul>
+              </div>
+              <div class="agent-log">
+                <div class="log-title"><i class="fa-solid fa-terminal"></i> گزارش لحظه‌ای ایجنت</div>
+                <div class="log-lines" id="agent-log"></div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- فریم ۳: اتوماسیون -->
+        <article class="result-frame reveal" id="frame-automation">
+          <h3 class="frame-title"><span class="frame-icon"><i class="fa-solid fa-diagram-project"></i></span> اتوماسیون کسب‌وکار</h3>
+          <div class="device-frame">
+            <div class="device-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="device-url">سناریوی اتوماسیون — پاسخ خودکار به دایرکت اینستاگرام</span>
+            </div>
+            <div class="flow-window" id="flow-window">
+              <div class="flow-node" data-step="0">
+                <span class="node-icon" style="--c:#e1306c"><i class="fa-brands fa-instagram"></i></span>
+                <strong>دایرکت جدید</strong>
+                <small>Instagram</small>
+              </div>
+              <div class="flow-link"><span class="flow-pulse"></span></div>
+              <div class="flow-node" data-step="1">
+                <span class="node-icon" style="--c:#7c3aed"><i class="fa-solid fa-brain"></i></span>
+                <strong>تحلیل با AI</strong>
+                <small>تشخیص نیاز مشتری</small>
+              </div>
+              <div class="flow-link"><span class="flow-pulse"></span></div>
+              <div class="flow-node" data-step="2">
+                <span class="node-icon" style="--c:#0f9d58"><i class="fa-solid fa-table"></i></span>
+                <strong>ثبت در شیت</strong>
+                <small>Google Sheets</small>
+              </div>
+              <div class="flow-link"><span class="flow-pulse"></span></div>
+              <div class="flow-node" data-step="3">
+                <span class="node-icon" style="--c:#229ed9"><i class="fa-brands fa-telegram"></i></span>
+                <strong>اطلاع به تیم</strong>
+                <small>Telegram</small>
+              </div>
+            </div>
+            <div class="flow-footer">
+              <span><i class="fa-solid fa-bolt"></i> اجرا شده امروز: <b id="flow-counter">۱۲۸</b></span>
+              <span><i class="fa-solid fa-clock"></i> میانگین زمان: <b>۱.۴ ثانیه</b></span>
+              <span><i class="fa-solid fa-circle-check"></i> نرخ موفقیت: <b>۹۹.۸٪</b></span>
+            </div>
+          </div>
+        </article>
+
+        <!-- فریم ۴: تولید محتوا / کاراکتر -->
+        <article class="result-frame reveal" id="frame-content">
+          <h3 class="frame-title"><span class="frame-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span> تولید محتوا و کاراکتر</h3>
+          <div class="device-frame">
+            <div class="device-bar">
+              <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+              <span class="device-url">استودیوی محتوا — کاراکتر برند و کپشن تولیدشده</span>
+            </div>
+            <div class="content-window">
+              <figure class="content-visual">
+                <img src="images/character-sample.png" alt="کاراکتر ربات تولیدشده با هوش مصنوعی برای برند">
+                <figcaption><i class="fa-solid fa-wand-magic-sparkles"></i> کاراکتر اختصاصی برند — تولیدشده با AI</figcaption>
+              </figure>
+              <div class="content-text">
+                <div class="prompt-box">
+                  <span class="prompt-label">درخواست</span>
+                  <p>یک کپشن اینستاگرام برای معرفی دستیار هوشمند فروشگاه بنویس؛ صمیمی و کوتاه.</p>
+                </div>
+                <div class="output-box">
+                  <span class="prompt-label"><i class="fa-solid fa-robot"></i> خروجی هوش مصنوعی</span>
+                  <p id="content-typewriter"></p>
+                </div>
+                <div class="content-tags">
+                  <span>#هوش_مصنوعی</span><span>#دستیار_هوشمند</span><span>#فروش_آنلاین</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================== ۵. مشکل و راه‌حل ===================== -->
+    <section class="problems" id="problems-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">مشکل و راه‌حل</span>
+          <h2>چالش شما چیه؟ راه‌حلش رو داریم</h2>
+        </header>
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <div class="problem-q"><i class="fa-solid fa-circle-question"></i> می‌خوای هزینه‌های کسب‌وکارت کم بشه؟</div>
+            <div class="problem-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+            <div class="problem-a"><i class="fa-solid fa-gears"></i> اتوماسیون</div>
+          </article>
+          <article class="problem-card reveal">
+            <div class="problem-q"><i class="fa-solid fa-circle-question"></i> می‌خوای پاسخ‌گویی به مشتری‌ها خودکار بشه؟</div>
+            <div class="problem-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+            <div class="problem-a"><i class="fa-solid fa-robot"></i> AI Agent</div>
+          </article>
+          <article class="problem-card reveal">
+            <div class="problem-q"><i class="fa-solid fa-circle-question"></i> می‌خوای کسب‌وکارت رو با AI توسعه بدی؟</div>
+            <div class="problem-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+            <div class="problem-a"><i class="fa-solid fa-lightbulb"></i> مشاوره</div>
+          </article>
+          <article class="problem-card reveal">
+            <div class="problem-q"><i class="fa-solid fa-circle-question"></i> می‌خوای سریع یک کسب‌وکار آنلاین راه بندازی؟</div>
+            <div class="problem-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+            <div class="problem-a"><i class="fa-solid fa-globe"></i> سایت + AI</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ۶. کارت‌های خدمات ===================== -->
+    <section class="services" id="services-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">خدمات هوشیکس</span>
+          <h2>چهار مسیر برای هوشمند شدن کسب‌وکار شما</h2>
+        </header>
+        <div class="service-grid">
+          <article class="service-card reveal" id="service-consulting">
+            <span class="service-num">۰۱</span>
+            <span class="service-icon"><i class="fa-solid fa-compass"></i></span>
+            <h3>مشاوره و استراتژی AI</h3>
+            <p class="service-tagline">«پیدا می‌کنیم AI دقیقاً کجای کسب‌وکار شما می‌تواند ارزش ایجاد کند.»</p>
+            <ul>
+              <li>تحلیل کسب‌وکار</li>
+              <li>پیدا کردن فرصت‌های AI</li>
+              <li>طراحی نقشه راه</li>
+              <li>انتخاب ابزار و راهکار</li>
+            </ul>
+            <button class="btn btn-ghost open-consult" data-source="service-consulting">درخواست مشاوره <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+
+          <article class="service-card reveal" id="service-systems">
+            <span class="service-num">۰۲</span>
+            <span class="service-icon"><i class="fa-solid fa-microchip"></i></span>
+            <h3>ساخت سیستم‌های AI</h3>
+            <p class="service-tagline">سیستم‌هایی که به‌جای شما فکر می‌کنند، پاسخ می‌دهند و کار را پیش می‌برند.</p>
+            <ul>
+              <li>ایجنت</li>
+              <li>چت‌بات</li>
+              <li>دستیار هوشمند</li>
+              <li>سیستم‌های اختصاصی AI</li>
+            </ul>
+            <button class="btn btn-ghost open-consult" data-source="service-systems">درخواست مشاوره <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+
+          <article class="service-card reveal" id="service-automation">
+            <span class="service-num">۰۳</span>
+            <span class="service-icon"><i class="fa-solid fa-gears"></i></span>
+            <h3>اتوماسیون کسب‌وکار</h3>
+            <p class="service-tagline">با ابزارهایی مثل n8n، فرآیندهای تکراری را بدون دخالت انسان اجرا می‌کنیم.</p>
+            <ul>
+              <li>اتصال ابزارها</li>
+              <li>خودکارسازی فرآیندها</li>
+              <li>پردازش اطلاعات</li>
+              <li>گزارش‌گیری و اجرای خودکار کارها</li>
+            </ul>
+            <button class="btn btn-ghost open-consult" data-source="service-automation">درخواست مشاوره <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+
+          <article class="service-card reveal" id="service-web">
+            <span class="service-num">۰۴</span>
+            <span class="service-icon"><i class="fa-solid fa-laptop-code"></i></span>
+            <h3>ساخت و توسعه سایت</h3>
+            <p class="service-tagline">وبسایتی که فقط ویترین نیست؛ به سیستم‌های هوشمند شما متصل است.</p>
+            <ul>
+              <li>سایت معرفی</li>
+              <li>سایت فروشگاهی</li>
+              <li>سایت‌های خدماتی</li>
+              <li>سایت‌های دارای قابلیت‌های AI</li>
+              <li>اتصال سایت به اتوماسیون و سیستم‌های هوشمند</li>
+            </ul>
+            <button class="btn btn-ghost open-consult" data-source="service-web">درخواست مشاوره <i class="fa-solid fa-arrow-left"></i></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ۷. نحوه کارکرد ===================== -->
+    <section class="process" id="process-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">نحوه کارکرد</span>
+          <h2>سه قدم تا هوشمند شدن کسب‌وکار</h2>
+        </header>
+        <ol class="process-steps">
+          <li class="process-step reveal">
+            <span class="step-num">۱</span>
+            <span class="step-icon"><i class="fa-solid fa-headset"></i></span>
+            <h3>مشاوره</h3>
+            <p>در یک جلسه رایگان، نیاز و چالش کسب‌وکارت را بررسی می‌کنیم.</p>
+          </li>
+          <li class="process-connector" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></li>
+          <li class="process-step reveal">
+            <span class="step-num">۲</span>
+            <span class="step-icon"><i class="fa-solid fa-list-check"></i></span>
+            <h3>انتخاب</h3>
+            <p>بهترین راهکار، ابزار و زمان‌بندی را با قیمت شفاف پیشنهاد می‌دهیم.</p>
+          </li>
+          <li class="process-connector" aria-hidden="true"><i class="fa-solid fa-arrow-left"></i></li>
+          <li class="process-step reveal">
+            <span class="step-num">۳</span>
+            <span class="step-icon"><i class="fa-solid fa-rocket"></i></span>
+            <h3>اجرا</h3>
+            <p>سیستم را می‌سازیم، راه‌اندازی می‌کنیم و بعد از تحویل هم کنارتان می‌مانیم.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== ۸. CTA میانی ===================== -->
+    <section class="mid-cta" id="cta-section">
+      <div class="container">
+        <div class="cta-box reveal">
+          <div class="cta-content">
+            <h2>آماده‌ای کسب‌وکارت رو هوشمند کنی؟</h2>
+            <p>فرم کوتاه ما فقط ۱ دقیقه وقت می‌گیره. در کمترین زمان با شما تماس می‌گیریم و مسیر مناسب کسب‌وکارت رو مشخص می‌کنیم.</p>
+          </div>
+          <div class="cta-actions">
+            <button class="btn btn-light open-consult" data-source="mid-cta-consult">
+              <i class="fa-solid fa-headset"></i> مشاوره رایگان بگیر
+            </button>
+            <button class="btn btn-outline-light open-consult" data-preset="start_business" data-source="mid-cta-start">
+              <i class="fa-solid fa-rocket"></i> می‌خوام شروع کنم
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ۹. سوالات متداول ===================== -->
+    <section class="faq" id="faq-section">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="section-kicker">FAQ</span>
+          <h2>سوالات متداول</h2>
+        </header>
+        <div class="faq-list" id="faq-list">
+          <details class="faq-item reveal">
+            <summary>هزینه همکاری چقدره؟ <i class="fa-solid fa-chevron-down"></i></summary>
+            <p>هزینه بسته به نوع خدمت، حجم کار و نیاز پروژه متفاوته. بعد از یک مشاوره رایگان و بررسی دقیق نیازت، قیمت شفاف و دقیق بهت اعلام می‌شه.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>چقدر طول می‌کشه یک پروژه آماده بشه؟ <i class="fa-solid fa-chevron-down"></i></summary>
+            <p>بسته به پیچیدگی پروژه (مثلاً یک چت‌بات ساده در مقابل یک سیستم اتوماسیون کامل) زمان تحویل متفاوته. در جلسه مشاوره، یک زمان‌بندی مشخص و واقع‌بینانه بهت ارائه می‌شه.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>برای کسب‌وکارهای کوچیک هم مناسبه یا فقط شرکت‌های بزرگ؟ <i class="fa-solid fa-chevron-down"></i></summary>
+            <p>هم برای کسب‌وکارهای کوچیک و تازه‌کار مناسبه، هم برای کسب‌وکارهایی که می‌خوان فرآیندهاشون رو در مقیاس بزرگ‌تر خودکار کنن. راه‌حل‌ها متناسب با اندازه و نیاز هر کسب‌وکار طراحی می‌شن.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>هیچ دانشی از هوش مصنوعی ندارم، بازم می‌تونم همکاری کنم؟ <i class="fa-solid fa-chevron-down"></i></summary>
+            <p>بله، نیازی به دانش فنی نیست. کافیه نیازت رو در جلسه مشاوره توضیح بدی؛ بقیه مسیر (طراحی، اجرا و راه‌اندازی) بر عهده ماست.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>بعد از تحویل پروژه، پشتیبانی هم هست؟ <i class="fa-solid fa-chevron-down"></i></summary>
+            <p>بله، بعد از تحویل هم برای رفع مشکلات احتمالی یا سوالات، پشتیبانی ادامه داره.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>چطور می‌تونم شروع کنم؟ <i class="fa-solid fa-chevron-down"></i></summary>
+            <p>فقط کافیه روی دکمه «مشاوره بگیر» (در هر جای سایت) کلیک کنی، فرم کوتاه رو پر کنی و در کمترین زمان باهات تماس گرفته می‌شه.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== ۱۰. فوتر ===================== -->
+  <footer class="site-footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <span class="logo-mark"><i class="fa-solid fa-robot"></i></span>
+            <span class="logo-text">هوشیکس</span>
+          </a>
+          <p>طراحی و راه‌اندازی راهکارهای هوش مصنوعی برای کسب‌وکار شما</p>
+          <div class="social-links">
+            <a href="#" aria-label="اینستاگرام"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" aria-label="ایکس"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" aria-label="لینکدین"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="دسترسی سریع">
+          <h4>دسترسی سریع</h4>
+          <a href="#services-section">خدمات</a>
+          <a href="#process-section">نحوه کارکرد</a>
+          <a href="#results-section">درباره من</a>
+          <a href="#faq-section">سوالات متداول</a>
+        </nav>
+
+        <div class="footer-contact">
+          <h4>راه‌های ارتباطی</h4>
+          <a href="tel:+989120000000"><i class="fa-solid fa-phone"></i> <span dir="ltr">۰۹۱۲ ۰۰۰ ۰۰۰۰</span></a>
+          <a href="mailto:hello@hooshix.ir"><i class="fa-solid fa-envelope"></i> hello@hooshix.ir</a>
+          <a href="#"><i class="fa-solid fa-location-dot"></i> تهران، ایران</a>
+        </div>
+
+        <div class="footer-cta">
+          <h4>هنوز تصمیم نگرفتی؟</h4>
+          <p>یک مشاوره رایگان، همه چیز رو روشن می‌کنه.</p>
+          <button class="btn btn-primary open-consult" data-source="footer">مشاوره بگیر <i class="fa-solid fa-arrow-left"></i></button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© ۲۰۲۶ هوشیکس — تمامی حقوق محفوظ است.</span>
+        <span>ساخته‌شده با <i class="fa-solid fa-heart"></i> و هوش مصنوعی</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== مودال فرم مشاوره چندمرحله‌ای ===================== -->
+  <div class="modal-backdrop" id="consult-modal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="بستن"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="modal-head">
+        <span class="logo-mark small"><i class="fa-solid fa-robot"></i></span>
+        <div>
+          <h3 id="modal-title">درخواست مشاوره رایگان</h3>
+          <p>سه مرحله کوتاه؛ کمتر از یک دقیقه</p>
+        </div>
+      </div>
+
+      <ol class="stepper" id="stepper">
+        <li class="active"><span>۱</span> وضعیت</li>
+        <li><span>۲</span> نیازها</li>
+        <li><span>۳</span> تماس</li>
+      </ol>
+
+      <form id="consult-form" novalidate>
+        <!-- مرحله ۱ -->
+        <fieldset class="form-step active" data-step="1">
+          <legend>وضعیت کسب‌وکارت چیه؟</legend>
+          <div class="choice-grid">
+            <label class="choice-card">
+              <input type="radio" name="business_status" value="have_business" required>
+              <span class="choice-icon"><i class="fa-solid fa-briefcase"></i></span>
+              <span class="choice-title">کسب‌وکار دارم</span>
+              <span class="choice-desc">می‌خوام با AI هوشمندترش کنم</span>
+            </label>
+            <label class="choice-card">
+              <input type="radio" name="business_status" value="start_business" required>
+              <span class="choice-icon"><i class="fa-solid fa-rocket"></i></span>
+              <span class="choice-title">می‌خوام کسب‌وکار راه بندازم</span>
+              <span class="choice-desc">یک ایده دارم و دنبال شروعم</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <!-- مرحله ۲ (کسب‌وکار دارم) -->
+        <fieldset class="form-step" data-step="2" data-branch="have_business">
+          <legend>چند سوال کلیدی</legend>
+          <div class="field">
+            <label for="hb-type">چه نوع کسب‌وکاری داری؟ <b>*</b></label>
+            <div class="chip-group" id="hb-type-chips">
+              <label class="chip"><input type="radio" name="hb_type" value="فروشگاه"> فروشگاه</label>
+              <label class="chip"><input type="radio" name="hb_type" value="خدماتی"> خدماتی</label>
+              <label class="chip"><input type="radio" name="hb_type" value="تولیدی"> تولیدی</label>
+              <label class="chip"><input type="radio" name="hb_type" value="دیگر"> دیگر</label>
+            </div>
+            <input type="text" id="hb-type" name="hb_type_text" placeholder="مثلاً: آموزشگاه زبان، کلینیک، کافه…" maxlength="80">
+          </div>
+          <div class="field">
+            <label>به کدوم خدمت بیشتر نیاز داری؟ <b>*</b> <small>(چند‌انتخابی)</small></label>
+            <div class="chip-group">
+              <label class="chip"><input type="checkbox" name="hb_services" value="چت‌بات"> چت‌بات</label>
+              <label class="chip"><input type="checkbox" name="hb_services" value="ایجنت"> ایجنت</label>
+              <label class="chip"><input type="checkbox" name="hb_services" value="اتوماسیون"> اتوماسیون</label>
+              <label class="chip"><input type="checkbox" name="hb_services" value="تولید محتوا و کاراکتر"> تولید محتوا و کاراکتر</label>
+              <label class="chip"><input type="checkbox" name="hb_services" value="وبسایت"> وبسایت</label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="hb-challenge">بزرگ‌ترین چالش فعلیت چیه؟ <small>(اختیاری)</small></label>
+            <input type="text" id="hb-challenge" name="hb_challenge" placeholder="مثلاً: پاسخ‌گویی دیرهنگام به مشتری‌ها" maxlength="160">
+          </div>
+        </fieldset>
+
+        <!-- مرحله ۲ (راه‌اندازی) -->
+        <fieldset class="form-step" data-step="2" data-branch="start_business">
+          <legend>چند سوال کلیدی</legend>
+          <div class="field">
+            <label for="sb-type">چه نوع کسب‌وکاری در ذهنته؟ <b>*</b></label>
+            <input type="text" id="sb-type" name="sb_type" placeholder="مثلاً: فروشگاه آنلاین لوازم خانگی" maxlength="120">
+          </div>
+          <div class="field">
+            <label>به کدوم خدمت نیاز داری؟ <b>*</b> <small>(چند‌انتخابی)</small></label>
+            <div class="chip-group">
+              <label class="chip"><input type="checkbox" name="sb_services" value="وبسایت"> وبسایت</label>
+              <label class="chip"><input type="checkbox" name="sb_services" value="تولید محتوا و کاراکتر"> تولید محتوا و کاراکتر</label>
+              <label class="chip"><input type="checkbox" name="sb_services" value="چت‌بات"> چت‌بات</label>
+              <label class="chip"><input type="checkbox" name="sb_services" value="اتوماسیون"> اتوماسیون</label>
+            </div>
+          </div>
+          <div class="field">
+            <label>در چه مرحله‌ای هستی؟ <b>*</b></label>
+            <div class="chip-group">
+              <label class="chip"><input type="radio" name="sb_stage" value="idea"> فقط ایده دارم</label>
+              <label class="chip"><input type="radio" name="sb_stage" value="planned"> برنامه دارم ولی شروع نکردم</label>
+              <label class="chip"><input type="radio" name="sb_stage" value="started"> تازه شروع کردم</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- مرحله ۳ -->
+        <fieldset class="form-step" data-step="3">
+          <legend>اطلاعات تماس</legend>
+          <div class="field">
+            <label for="full-name">نام و نام‌خانوادگی <b>*</b></label>
+            <input type="text" id="full-name" name="full_name" placeholder="مثلاً: سارا محمدی" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label for="phone">شماره تماس <b>*</b></label>
+            <input type="tel" id="phone" name="phone" placeholder="۰۹۱۲xxxxxxx" dir="ltr" maxlength="15" required>
+          </div>
+          <div class="field">
+            <label>بهترین زمان تماس <small>(اختیاری)</small></label>
+            <div class="chip-group">
+              <label class="chip"><input type="radio" name="call_time" value="morning"> <i class="fa-regular fa-sun"></i> صبح</label>
+              <label class="chip"><input type="radio" name="call_time" value="noon"> <i class="fa-solid fa-sun"></i> ظهر</label>
+              <label class="chip"><input type="radio" name="call_time" value="evening"> <i class="fa-regular fa-moon"></i> عصر</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <p class="form-error" id="form-error" role="alert"></p>
+
+        <div class="form-nav">
+          <button type="button" class="btn btn-ghost" id="prev-btn" hidden><i class="fa-solid fa-arrow-right"></i> قبلی</button>
+          <button type="button" class="btn btn-primary" id="next-btn">بعدی <i class="fa-solid fa-arrow-left"></i></button>
+          <button type="submit" class="btn btn-primary" id="submit-btn" hidden><i class="fa-solid fa-paper-plane"></i> ارسال درخواست</button>
+        </div>
+      </form>
+
+      <div class="form-success" id="form-success" hidden>
+        <span class="success-icon"><i class="fa-solid fa-check"></i></span>
+        <h3>درخواستت ثبت شد!</h3>
+        <p>ممنون که به هوشیکس اعتماد کردی. در کمترین زمان با شماره‌ای که وارد کردی تماس می‌گیریم.</p>
+        <button class="btn btn-primary" id="success-close">برگشت به سایت</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
